@@ -1,0 +1,98 @@
+;Codewright Project File (do not remove or modify this line)
+[ProjInit]
+ProjSetConfigFlags=0x04010940
+ProjCheckPath='D:\WinAVR\Projects\VX2212\\'
+
+[Files]
+C:\WinAVR\Projects\VX2212\VX2212.h
+C:\WinAVR\Projects\VX2212\makefile
+C:\WinAVR\Projects\VX2212\VX2212.c
+C:\WinAVR\Projects\VX2212\async.c
+C:\WinAVR\Projects\VX2212\async.h
+
+[State]
+SysSetCwd='D:\WinAVR\Projects\VX2212'
+SrchSetFlags=0x021120aa
+FileSortMode=0x2
+_StateHistory=FILELIST,'C:\WinAVR\Projects\VX2212\VX2212.h','C:\WinAVR\Projects\VX2212\async.h','C:\WinAVR\Projects\VX2212\async.c','D:\WinAVR\Projects\VX2212\async.c','D:\winavr\projects\VX2212-NEW\Makefile','D:\WinAVR\Projects\VX2212-NEW\async.c','D:\winavr\projects\VX2212-NEW\async.h','D:\winavr\projects\VX2212-NEW\VX2212.c','D:\WinAVR\Projects\VX2212\VX2212.c'
+_StateHistory=SEARCH,'bmap','bank','s_bmp','s_bmap','s_bmap_in','s_xlate','s_xbit','store_bank','xbit','read_block'
+_StateHistory=REPLACE,'start_ints','s_frame','s_bank','s_cs1','s_cs2','s_bmp','s_bmap','s_bmap_in','s_xlate','s_xbit'
+_StateHistory=XMACRO,'detab'
+_StateHistory=EDITFILE,'config.c','D:\WinAVR\picoos-0.9.4\projects\Micro-RC\micro-rc.pjt','D:\WinAVR\Projects\Micro-RC\micro-rc.pjt','D:\WinAVR\Projects\Micro-RC\async.c','C:\WinAVR\Projects\Micro-RC-NEW\micro-rc.c','C:\WinAVR\Projects\Micro-RC-NEW\init.c','C:\WinAVR\Projects\Micro-RC\micro-rc.pjt','D:\WinAVR\Projects\VX2212\VX2212.pjt','D:\WinAVR\Projects\VX2212\async.c','D:\WinAVR\Projects\VX2212-NEW\VX2212.pjt'
+_StateHistory=DIRECTORY,'d:\winavr\picoos-0.9.4\projects\VX2212','d:\winavr\picoos-0.9.4','d:\winavr\avr\include','d:\winavr\projects\VX2212','d:\winavr'
+_StateHistory=GOTOLINE,'550','505','g_PL'
+_StateHistory=FGREP,'PROGMEM','SPCR','size_t','_GCC_WCHAR_T','beep_mode','TICK_RATE_HZ','1000','10ms','MOD_ATTEN','eeprom_read_block'
+_StateHistory=GREPSCOPE,'*.*','*.c','*.h','*.c; *.h','*.c; *.h; *.cpp'
+ProjLoadWorkspace='test',1
+
+[Editor]
+_RestoreSysFlags=0x62493dfa, 0xfffffffc, 0
+VCSProject=''
+VCSProjectPath=''
+VCSProjectLocalPath=''
+ClipboardSetTermStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableSepStr=1
+ScrapSetCount=1
+
+[Compiler]
+TagSetCmd='${HOME}${WTAGS} -oc -d -t${TAGFILE}.tag -p${TAGFILE}.ptg',0x8000060
+BrowseSetFile='D:\WinAVR\projects\VX2212\VX2212.ptg'
+TagSetFile='D:\WinAVR\projects\VX2212\VX2212.tag'
+CompilerAddCmd='Microsoft Assembler','make %pmakefile',1073741840,'',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='Microsoft Assembler',
+CompilerAddCmd='Microsoft C Debug (NT-i386)','${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 -Zi -Od %r%e',1073741936,'${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 -Zi -Od %r%e',112,'',144,'',144,'',0,'',0,'_MicrosoftErrorInfo','','','',''
+CompilerAddResponse='Microsoft C Debug (NT-i386)',
+CompilerAddCmd='Default Compiler Settings','make makefile',1073741840,'',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='Default Compiler Settings',
+CompilerAddCmd='Borland C++ (16-bit)','${FTEE} bcc -c -ml -w %b%e',1073741936,'${FTEE} bcc -c -ml -w %b%e',112,'',144,'',144,'',0,'',0,'_BorlandCppErrorInfo','','','',''
+CompilerAddResponse='Borland C++ (16-bit)',
+CompilerAddCmd='WinAVR','make %v%d\makefile > bld.err',1073741840,'make %v%d\makefile > bld.err',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='WinAVR',
+CompilerAddCmd='Borland C++ (32-bit)','${FTEE} bcc32 -c -w %b%e',1073741936,'${FTEE} bcc32 -c -w %b%e',112,'',144,'',144,'',0,'',0,'_BorlandCppErrorInfo','','','',''
+CompilerAddResponse='Borland C++ (32-bit)',
+CompilerAddCmd='$_cw_proj_hash_$','',1073741904,'',80,'make',400,'make clean',400,'',0,'',0,'_ErrorInfoDefault','','','proj.err','%x'
+CompilerAddResponse='$_cw_proj_hash_$',
+CompilerAddCmd='Microsoft C DLL (NT-i386)','${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 -D_MT -D_DLL %r%e',1073741936,'${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 -D_MT -D_DLL %r%e',112,'',144,'',144,'',0,'',0,'_MicrosoftErrorInfo','','','',''
+CompilerAddResponse='Microsoft C DLL (NT-i386)',
+CompilerAddCmd='Microsoft C(NT-i386)','${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 %r%e',1073741936,'${FTEE} cl -DSTRICT -c -W3 -G3 -D_X86_=1 -DWIN32 %r%e',112,'',144,'',144,'',0,'',0,'_MicrosoftErrorInfo','','','',''
+CompilerAddResponse='Microsoft C(NT-i386)',
+CompilerAssign='Microsoft Assembler','.htm'
+CompilerAssign='WinAVR','.c'
+CompilerAssign='Microsoft Assembler','.pas'
+CompilerAssign='Microsoft Assembler','.h'
+CompilerAssign='Microsoft Assembler','.ini'
+CompilerAssign='Microsoft Assembler','.html'
+CompilerAssign='Microsoft Assembler','.cpp'
+CompilerAssign='WinAVR','.*'
+CompilerAssign='Microsoft Assembler','.cxx'
+CompilerAssign='Microsoft Assembler','.txt'
+CompilerAssign='Microsoft Assembler','.asm'
+CompilerAssign='Microsoft Assembler','.hpp'
+
+[VersionControl:PVCS]
+VCSSetCmd=VCS_CHECKIN_ID,'put -n -T@%Q -M@%Q %b%e',0x8000040
+VCSSetCmd=VCS_CHECKINLOCK_ID,'put -n -T@%Q -M@%Q -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKOUT_ID,'get -y %b%e',0x8000040
+VCSSetCmd=VCS_CHECKOUTLOCK_ID,'get -y -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLOCK_ID,'vcs -y -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKUNLOCK_ID,'vcs -y -u %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLABEL_ID,'vcs -y -v"${VCSLABEL}" %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLOG_ID,'vlog %b%e',0x8000040
+VCSSetCmd=VCS_CHECKPROP_ID,'vlog -b %b%e',0x8000040
+VCSSetCmd=VCS_CHECKDIFF_ID,'vdiff -r %b%e',0x8000040
+VCSSetCmd=VCS_CHECKMENU_ID,'pvcsvmwn',0x8000000
+VCSSetCmd=VCS_ADD_ID,'vcs -i -t@%Q %b%e',0x8000040
+VCSSetCmd=VCS_REMOVE_ID,'del /f %b%{??v|___}e',0x8000040
+
+[Project]
+ConfigSetLinkDBFilename='D:\CW\cwright.ldb'
+ConfigSetSymbolDBFilename='D:\CW\cwright.sbl'
+ConfigSetMarkDBFilename='D:\CW\cwright.mrk'
+EditSetPath=';d:\winavr\picoos-0.9.4\projects\VX2212;d:\winavr\projects\VX2212'
+[Workspace.test]
+StateWindowFrame=80,37,1144,812,0x62493d7a
+_StateWindow=0,0,1032,873,0x00100008,'D:\WinAVR\Projects\VX2212\VX2212.c',15,240,244,4,20,0,46,26,126,176,8,4294967295,4294967295,1,10,'',12,255,48,0,10,267,0,0,522,252,249,168,61,400,0,12,15,15,15,522,522,526,526,15,0,0,253,224,252,128,1,208
+_StateBuffer='D:\WinAVR\Projects\VX2212\VX2212.c',0x0c000482,168,61,25,'5 9','',0x0,'',1,72
+

@@ -1,0 +1,532 @@
+Archive member included because of file (symbol)
+
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+                              VX2212.o (__udivmodhi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o (exit)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+                              VX2212.o (__do_copy_data)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+                              VX2212.o (__do_clear_bss)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+                              VX2212.o (__eerd_block)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                              VX2212.o (__eewr_block)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o) (__prologue_saves__)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+s_bank              0x200             VX2212.o
+s_frame             0x100             VX2212.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+LOAD VX2212.o
+LOAD async.o
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libm.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xca0
+ *(.vectors)
+ .vectors       0x00000000       0x26 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000026       0x2e VX2212.o
+                0x00000026                copyright
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008a        0x2 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+                0x0000008a                __bad_interrupt
+                0x0000008a                __vector_6
+                0x0000008a                __vector_3
+                0x0000008a                __vector_17
+                0x0000008a                __vector_7
+                0x0000008a                __vector_5
+                0x0000008a                __vector_4
+                0x0000008a                __vector_2
+                0x0000008a                __vector_15
+                0x0000008a                __vector_8
+                0x0000008a                __vector_14
+                0x0000008a                __vector_10
+                0x0000008a                __vector_16
+                0x0000008a                __vector_18
+ .text          0x0000008c      0x72e VX2212.o
+                0x0000011e                start_ints
+                0x0000017e                __vector_1
+                0x000000c2                blink_led
+                0x00000148                delay_us
+                0x000006d0                main
+                0x0000012c                delay_ms
+                0x00000108                init_io
+                0x000001b2                __vector_9
+                0x000001d0                tx_packet
+                0x0000036a                rx_packet
+                0x000000b4                reset_radio
+ .text          0x000007ba      0x3e4 async.o
+                0x000008b4                asi_putc
+                0x000007fa                asi_getc
+                0x000008f8                __vector_12
+                0x000007ba                asi_init
+                0x00000a12                asi_puts
+                0x0000097c                __vector_11
+                0x000008e4                __vector_13
+                0x0000084c                asi_read
+                0x000008c0                asi_write
+                0x00000a9e                asi_tgetc
+                0x00000b32                asi_tgets
+ .text          0x00000b9e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+ .text          0x00000b9e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+ .text          0x00000b9e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+ .text          0x00000b9e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+ .text          0x00000b9e       0x34 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+                0x00000b9e                __eerd_block
+ .text          0x00000bd2       0x34 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                0x00000bd2                __eewr_block
+ .text          0x00000c06        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+ .text          0x00000c06        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+                0x00000c06                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000c06       0x28 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+                0x00000c06                __udivmodhi4
+ .text.libgcc   0x00000c2e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000c2e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000c2e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000c2e       0x38 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+                0x00000c2e                __prologue_saves__
+ .text.libgcc   0x00000c66       0x36 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+                0x00000c66                __epilogue_restores__
+                0x00000c9c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000c9c        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+                0x00000c9c                exit
+                0x00000c9c                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000c9c        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000ca0                _etext = .
+
+.data           0x00800060       0x10 load address 0x00000ca0
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+ .data          0x00800060       0x10 VX2212.o
+                0x00800060                s_xbit
+ .data          0x00800070        0x0 async.o
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+ .data          0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800070                . = ALIGN (0x2)
+                0x00800070                _edata = .
+                0x00800070                PROVIDE (__data_end, .)
+
+.bss            0x00800070      0x342
+                0x00800070                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800070        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+ .bss           0x00800070        0x2 VX2212.o
+                0x00800071                s_cs2
+                0x00800070                s_cs1
+ .bss           0x00800072       0x40 async.o
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+ .bss           0x008000b2        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008000b2      0x300 VX2212.o
+                0x008000b2                s_bank
+                0x008002b2                s_frame
+                0x008003b2                PROVIDE (__bss_end, .)
+                0x00000ca0                __data_load_start = LOADADDR (.data)
+                0x00000cb0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003b2        0x0
+                0x008003b2                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008003b2                PROVIDE (__noinit_end, .)
+                0x008003b2                _end = .
+                0x008003b2                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x40
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 VX2212.o
+ .debug_aranges
+                0x00000020       0x20 async.o
+
+.debug_pubnames
+                0x00000000      0x199
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xec VX2212.o
+ .debug_pubnames
+                0x000000ec       0xad async.o
+
+.debug_info     0x00000000      0xf4e
+ *(.debug_info)
+ .debug_info    0x00000000      0x9d8 VX2212.o
+ .debug_info    0x000009d8      0x576 async.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x583
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x30e VX2212.o
+ .debug_abbrev  0x0000030e      0x275 async.o
+
+.debug_line     0x00000000      0xb05
+ *(.debug_line)
+ .debug_line    0x00000000      0x71f VX2212.o
+ .debug_line    0x0000071f      0x3e6 async.o
+
+.debug_frame    0x00000000      0x1a0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xe0 VX2212.o
+ .debug_frame   0x000000e0       0xc0 async.o
+
+.debug_str      0x00000000      0x2c7
+ *(.debug_str)
+ .debug_str     0x00000000      0x20e VX2212.o
+                                0x25c (size before relaxing)
+ .debug_str     0x0000020e       0xb9 async.o
+                                0x170 (size before relaxing)
+
+.debug_loc      0x00000000      0xa9d
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x780 VX2212.o
+ .debug_loc     0x00000780      0x31d async.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(VX2212.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x78
+ .debug_ranges  0x00000000       0x48 VX2212.o
+ .debug_ranges  0x00000048       0x30 async.o
+
+Cross Reference Table
+
+Symbol                                            File
+__bad_interrupt                                   c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__bss_end                                         c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+__data_end                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_clear_bss.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+                                                  async.o
+                                                  VX2212.o
+__do_copy_data                                    c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_copy_data.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+                                                  async.o
+                                                  VX2212.o
+__eerd_block                                      c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+                                                  VX2212.o
+__eewr_block                                      c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                                                  VX2212.o
+__epilogue_restores__                             c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_epilogue.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+__heap_end                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__init                                            c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__prologue_saves__                                c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_prologue.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eewr_block.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4\libc.a(eerd_block.o)
+__stack                                           c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__udivmodhi4                                      c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_udivmodhi4.o)
+                                                  VX2212.o
+__vector_1                                        VX2212.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_10                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_11                                       async.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_12                                       async.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_13                                       async.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_14                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_15                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_16                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_17                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_18                                       c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_2                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_3                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_4                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_5                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_6                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_7                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_8                                        c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_9                                        VX2212.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vector_default                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+__vectors                                         c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+_exit                                             c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+asi_getc                                          async.o
+                                                  VX2212.o
+asi_init                                          async.o
+                                                  VX2212.o
+asi_putc                                          async.o
+                                                  VX2212.o
+asi_puts                                          async.o
+asi_read                                          async.o
+asi_tgetc                                         async.o
+                                                  VX2212.o
+asi_tgets                                         async.o
+asi_write                                         async.o
+blink_led                                         VX2212.o
+copyright                                         VX2212.o
+delay_ms                                          VX2212.o
+                                                  async.o
+delay_us                                          VX2212.o
+exit                                              c:/winavr/bin/../lib/gcc/avr/4.3.2/avr4\libgcc.a(_exit.o)
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+init_io                                           VX2212.o
+main                                              VX2212.o
+                                                  c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr4/crtm8.o
+reset_radio                                       VX2212.o
+rx_packet                                         VX2212.o
+s_bank                                            VX2212.o
+s_cs1                                             VX2212.o
+s_cs2                                             VX2212.o
+s_frame                                           VX2212.o
+s_xbit                                            VX2212.o
+start_ints                                        VX2212.o
+tx_packet                                         VX2212.o
